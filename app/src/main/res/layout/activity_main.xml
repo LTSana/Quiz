@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Android Quiz"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_marginTop="30dp"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_below="@id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Question"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/questionText"
+        android:layout_below="@id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="N/A"
+        android:gravity="center"
+        ></TextView>
+
+    <LinearLayout
+        android:id="@+id/listOptions"
+        android:layout_below="@+id/questionText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/clone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A. N/A"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
+            ></TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_below="@id/listOptions"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center"
+        >
+
+        <Button
+            android:id="@+id/aBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A"
+            android:gravity="center"
+            android:layout_marginRight="30dp"
+            ></Button>
+
+        <Button
+            android:id="@+id/bBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B"
+            android:gravity="center"
+            ></Button>
+
+        <Button
+            android:id="@+id/cBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C"
+            android:gravity="center"
+            android:layout_marginLeft="30dp"
+            ></Button>
+
+    </LinearLayout>
+
+</RelativeLayout>
